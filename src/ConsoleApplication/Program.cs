@@ -26,6 +26,7 @@ namespace ConsoleApplication
             }
 
             /// 10.000.000 de instancias
+            /// El destructor es llamado por garbage collector al detectar presión de memoria
             for (int i = 0; i < 10000000; i++) 
             {
                 var train = new Train($"train{i}");
